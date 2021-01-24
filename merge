@@ -1,0 +1,213 @@
+.custom-select select {
+display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+background-color:white;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+position: absolute;
+content: "";
+top: 14px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #fff transparent;
+top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+color: black;
+padding: 8px 16px;
+border: 1px solid transparent;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+cursor: pointer;
+user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+position: absolute;
+background-color: white;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+background-color: rgba(0, 0, 0, 0.1);
+}
+.container1 img{
+padding-bottom: 0px;
+padding-top: 2px;
+width: 7%;
+height: 10%;
+margin-left: 0%;
+}
+.container1{
+margin-top: 0%;
+
+}
+nav {
+display: block;
+position: absolute;
+top:0%;
+width: 100%;
+background-color: white;
+padding-top: 2px;
+}
+li {
+list-style-type: none;
+display: inline;
+margin-right: 20px;
+font-size: 15px;
+padding-top: 0px;
+}
+a{
+color:black;
+}
+a:link {
+color: black;
+text-decoration: none;
+}
+#hover1 a:hover {
+background-color: black;
+color:white;
+text-decoration: none;
+}
+#hover2 a:hover {
+background-color: black;
+color:white;
+text-decoration: none;
+}
+#hover2{
+margin-left: 2%;
+}
+li>ul {
+display: none;
+}
+li:hover ul {
+display: block;
+position: absolute;
+left: 155px;
+background-color: white;
+margin: 0;
+margin-top: 15px;
+padding-top: 15px;
+}
+li:hover ul li a:link {
+display: block;
+margin-left: 0;
+padding-right: 30px;
+}
+li a span{
+color: red;
+}
+#float{
+padding-left:1%;
+font-size:17px;
+}
+button{
+background-color: rgb(199, 18, 18);
+color: white;
+width: 100px;
+border-radius: 5px;
+}
+#btn4 button{
+width:200px;
+background-color: white;
+color: lightseagreen;
+border: 1px solid lightseagreen;
+}
+button p{
+font-size: 15px;
+padding-top:1px;
+}
+#searchbar{
+width:450px;
+padding-left:4px;
+height: 40px;
+border-radius: 20px;
+}
+#btn1 button{
+background-color: white;
+color: lightseagreen;
+border: 1px solid lightseagreen;
+}
+#btn2 button{
+background-color:lightseagreen;
+color: white;
+border: 1px solid black;
+}
+.video{
+margin:10px 50px;
+background-color: rgb(233, 233, 114);
+border-radius: 1rem;
+padding-bottom: 2rem;
+}
+.video video{
+width:430px;
+padding:10px;
+
+background-color: transparent blue;
+filter:grayscale(90%);
+transition :1s;
+border-radius: 2rem;
+}
+.video video:hover{
+filter:grayscale(0);
+transform:scale(1.1)
+}
+.video #v2, .video #v4{
+padding-left: 15%;
+}
+.video #v1, .video #v3{
+padding-left: 5%;
+}
+
+
+.video button{
+text-align: center;
+margin-left:550px;
+border-radius:5px;
+background:linear-gradient(blue,#800000);
+color: #fff;
+font-size: 15px;
+cursor: pointer;
+}
+.video button:focus{
+outline:none;
+}
+.video button:hover{
+background: linear-gradient(#800000,blue);
+transition: all ease-out 0.2s;
+opacity:0.9;
+filter:alpha(opacity=10);
+}
+footer{
+background-color: black;
+text-align: center;
+color:blanchedalmond;
+}
+.footer{
+background-color: lightskyblue;
+margin-left: 0rem;
+margin-right: 0rem;
+border-radius: 0.5rem;
+}
