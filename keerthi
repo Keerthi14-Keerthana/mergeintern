@@ -1,0 +1,372 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Intern Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/4655e171a7.js"></script>
+<link rel="styleaheet" href="style.css">
+    </head>
+   <style>
+          .custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color:white;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.container1 img{
+            padding-bottom: 0px;
+            padding-top: 2px;
+              width: 7%;
+              height: 10%;
+              margin-left: 0%;
+        }
+        .container1{
+          margin-top: 0%;
+
+        }
+        nav {
+        display: block;
+        position: absolute;
+        top:0%;
+        width: 100%;
+        background-color: white;
+        padding-top: 2px;
+      }
+      li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 20px;
+        font-size: 15px;
+        padding-top: 0px;
+      }
+      a{
+          color:black;
+      }
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      #hover1 a:hover {
+        background-color: black;
+        color:white;
+        text-decoration: none;
+      }
+      #hover2 a:hover {
+        background-color: black;
+        color:white;
+        text-decoration: none;
+      }
+      #hover2{
+          margin-left: 2%;
+      }
+      li>ul {
+        display: none;
+      }
+      li:hover ul {
+        display: block;
+        position: absolute;
+        left: 155px;
+        background-color: white;
+        margin: 0;
+        margin-top: 15px;
+        padding-top: 15px;
+      }
+      li:hover ul li a:link {
+        display: block;
+        margin-left: 0;
+        padding-right: 30px;
+      }
+      li a span{
+          color: red;
+      }
+      #float{
+          padding-left:1%;
+          font-size:17px;
+      }
+      button{
+          background-color: rgb(199, 18, 18);
+          color: white;
+          width: 100px;
+          border-radius: 5px;
+      }
+      #btn4 button{
+        width:200px;
+          background-color: white;
+          color: lightseagreen;
+          border: 1px solid lightseagreen;
+      }
+      button p{
+          font-size: 15px;
+          padding-top:1px;
+      }
+      #searchbar{
+          width:450px;
+        padding-left:4px;
+        height: 40px;
+        border-radius: 20px;
+      }
+      #btn1 button{
+          background-color: white;
+          color: lightseagreen;
+          border: 1px solid lightseagreen;
+      }
+      #btn2 button{
+          background-color:lightseagreen;
+          color: white;
+          border: 1px solid black;
+      }
+      .video{
+ margin:10px 50px;
+ background-color: rgb(233, 233, 114);
+ border-radius: 1rem;
+ padding-bottom: 2rem;
+ }
+ .video video{
+ width:430px;
+ padding:10px;
+
+ background-color: transparent blue;
+ filter:grayscale(90%);
+ transition :1s;
+ border-radius: 2rem;
+ }
+ .video video:hover{
+ filter:grayscale(0);
+ transform:scale(1.1)
+ }
+.video #v2, .video #v4{
+  padding-left: 15%;
+}
+.video #v1, .video #v3{
+  padding-left: 5%;
+}
+
+
+.video button{
+     text-align: center;
+     margin-left:550px;
+     border-radius:5px;
+ background:linear-gradient(blue,#800000);
+ color: #fff;
+ font-size: 15px;
+ cursor: pointer;
+ }
+.video button:focus{
+ outline:none;
+ }
+ .video button:hover{
+ background: linear-gradient(#800000,blue);
+ transition: all ease-out 0.2s;
+ opacity:0.9;
+ filter:alpha(opacity=10);
+ }
+ footer{
+     background-color: black;
+     text-align: center;
+     color:blanchedalmond;
+ }
+ .footer{
+     background-color: lightskyblue;
+     margin-left: 0rem;
+     margin-right: 0rem;
+     border-radius: 0.5rem;
+ }
+   </style>
+    <body>
+        <div class="container1">
+            <nav>
+                <ul>
+                  <li><a href="#"><img src="intern.jpeg"></a></li>
+                  <li id="hover1">
+                    <a href="">Categories</a>
+                    <ul>
+                      <li><a href="#">Train Your Teams</a></li>
+                      <li><a href="#">Courses for Employees</a></li>
+                      <li><a href="#">Integrste Your Corporate LMS</a></li>
+                      <li><a href="#">Institutional Partnerships</a></li>
+                      <li><a href="#"><span>New:</span> For Collages & Universities</a></li>
+                    </ul>
+                  </li>
+                  <input  id="searchbar" type="text" placeholder="Search..">
+                  <li id="hover2">
+                      <a id="h2" href="#">Intern for Business</a>
+                      <ul id="div1">
+                        <h2>Get your team access to over 5,000 top Intern courses, anytime, anywhere</h2>
+                        <button>Try Udemy for Business</button>
+                      </ul>
+                    </li>
+                  <li id="float"><a href="#">Teach on Udemy</a></li>
+                  <li><a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></a></li>
+                  <li id="btn1"><a href="#"><button><p>log in </p></button></a></li>
+                  <li id="btn2"><a  href="#"><button><p>Sign in</p></button></a></li>
+                </ul>
+              </nav>
+          </div><br>
+
+          <div class="video">
+            <p style="color:1px solid lightgreen; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;">VIDEOS</p>
+       <a id="v1" href="video\v1.mp4"><video class="polystar" src="video\v1.mp4" preload></a>
+       <a id="v2" href="video\v1.mp4"><video  class="polystar1" src="video\v1.mp4" preload></a>
+               <a id="v3" href="video\v1.mp4"><video  class="polystar2" src="video\v1.mp4" preload></a>
+                   <a id="v4" href="video\v1.mp4"><video  class="polystar3" src="video\v1.mp4" preload></a><br><br>
+                      <a href="https://youtube.com/channel/UCORJBqq-0tusMhTmCxaxEww"> <button ><i class="fa fa-youtube-play"></i> More</button></a>
+           </div>
+           <footer>
+           <marquee> <p>Designed by: Prajwal M S | gowdaprajwal009@gmail.com</p></marquee>
+        </footer>
+
+
+          <script>
+            var x, i, j, l, ll, selElmnt, a, b, c;
+            x = document.getElementsByClassName("custom-select");
+            l = x.length;
+            for (i = 0; i < l; i++) {
+              selElmnt = x[i].getElementsByTagName("select")[0];
+              ll = selElmnt.length;
+          a = document.createElement("DIV");
+              a.setAttribute("class", "select-selected");
+              a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+              x[i].appendChild(a);
+           b = document.createElement("DIV");
+              b.setAttribute("class", "select-items select-hide");
+              for (j = 1; j < ll; j++) {
+           c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                  var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                      if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                          y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                      }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+              }
+              x[i].appendChild(b);
+              a.addEventListener("click", function(e) {
+               e.stopPropagation();
+                  closeAllSelect(this);
+                  this.nextSibling.classList.toggle("select-hide");
+                  this.classList.toggle("select-arrow-active");
+                });
+            }
+            function closeAllSelect(elmnt) {
+             var x, y, i, xl, yl, arrNo = [];
+              x = document.getElementsByClassName("select-items");
+              y = document.getElementsByClassName("select-selected");
+              xl = x.length;
+              yl = y.length;
+              for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                  arrNo.push(i)
+                } else {
+                  y[i].classList.remove("select-arrow-active");
+                }
+              }
+              for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                  x[i].classList.add("select-hide");
+                }
+              }
+            }
+            document.addEventListener("click", closeAllSelect);
+
+
+var $polystar = $('.polystar');
+$polystar.on('mouseenter focus', function () {
+  $polystar.get(0).play();
+});
+$polystar.on('mouseout blur', function () {
+  $polystar.get(0).pause();
+})
+var $polystar1 = $('.polystar1');
+$polystar1.on('mouseenter focus', function () {
+  $polystar1.get(0).play();
+});
+$polystar1.on('mouseout blur', function () {
+  $polystar1.get(0).pause();
+})
+var $polystar2 = $('.polystar2');
+$polystar2.on('mouseenter focus', function () {
+  $polystar2.get(0).play();
+});
+$polystar2.on('mouseout blur', function () {
+  $polystar2.get(0).pause();
+})
+var $polystar3 = $('.polystar3');
+$polystar3.on('mouseenter focus', function () {
+  $polystar3.get(0).play();
+});
+$polystar3.on('mouseout blur', function () {
+  $polystar3.get(0).pause();
+})
+
+
+            </script>
+    </body>
+</html>
